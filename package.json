@@ -1,0 +1,20 @@
+{
+  "name": "releve",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Workout tracker for dancers — Cloudflare Pages + KV",
+  "scripts": {
+    "setup": "node scripts/setup.mjs",
+    "dev": "node scripts/dev.mjs",
+    "build": "vite build",
+    "preview": "vite build && wrangler pages dev --port 8788",
+    "deploy": "vite build && wrangler pages deploy",
+    "deploy:preview": "vite build && wrangler pages deploy --branch preview",
+    "test": "node --test tests/*.test.js"
+  },
+  "devDependencies": {
+    "vite": "^8.3.0",
+    "wrangler": "^4.150.0"
+  }
+}

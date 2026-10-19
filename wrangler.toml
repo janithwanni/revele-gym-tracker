@@ -1,0 +1,8 @@
+# Cloudflare Pages project config. `npm run setup` fills in the KV namespace id.
+name = "releve"
+pages_build_output_dir = "./dist"
+compatibility_date = "2025-06-01"
+
+[[kv_namespaces]]
+binding = "RELEVE_KV"
+id = "81cf47a25a384855b4bde2a6a5584fd8"
